@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+<parameter name="Name" value="Chrome"></parameter>
+   <test thread-count="5" name="Test">
+      <classes>
+         <class name="Crossbrowser_Parallel.CrossbrowserWithParallelTesting">
+         </class>
+     </classes>
+   </test> <!-- Test -->
+   
+   <test thread-count="5" name="Test1">
+   <parameter name="Name" value="Edge"></parameter>
+      <classes>
+         <class name="Crossbrowser_Parallel.CrossbrowserWithParallelTesting">
+         </class>
+     </classes>
+   </test> <!-- Test -->
+   
+   
+   
+</suite> <!-- Suite -->

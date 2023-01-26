@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CBP]" guice-stage="DEVELOPMENT">
+  <parameter name="Browsername" value="Edge"/>
+  <test thread-count="5" name="Test2(failed)">
+    <parameter name="Browsername" value="Firefox"/>
+    <classes>
+      <class name="CrossBrowserTesting.Test1">
+        <methods>
+          <include name="facebooklogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- CrossBrowserTesting.Test1 -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [CBP] -->
